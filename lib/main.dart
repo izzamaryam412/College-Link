@@ -1,3 +1,4 @@
+import 'package:architect/LoginScreen%20.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
 
@@ -26,7 +27,7 @@ class _HomePageState extends State<HomePage> {
   void initState() {
     super.initState();
     // Set a timer to navigate to LoginPage after 3 seconds
-    Timer(Duration(seconds: 3), () {
+    Timer(const Duration(seconds: 4), () {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => LoginPage()),
@@ -47,7 +48,7 @@ class _HomePageState extends State<HomePage> {
           return Stack(
             children: [
               Container(
-                color: Color(0xFF27569D).withOpacity(0.67),
+                color: const Color(0xFF27569D).withOpacity(0.67),
               ),
               Positioned(
                 top: constraints.maxHeight * 0.17,
@@ -57,7 +58,7 @@ class _HomePageState extends State<HomePage> {
                   height: 202,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Color(0xFF3365B0).withOpacity(0.67),
+                    color: const Color(0xFF3365B0).withOpacity(0.67),
                   ),
                 ),
               ),
@@ -69,7 +70,7 @@ class _HomePageState extends State<HomePage> {
                   height: circleHeight,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Color(0xFF3365B0).withOpacity(0.67),
+                    color: const Color(0xFF3365B0).withOpacity(0.67),
                   ),
                 ),
               ),
@@ -102,7 +103,7 @@ class _HomePageState extends State<HomePage> {
                           color: Colors.white,
                         ),
                       ),
-                      SizedBox(height: 10),
+                      const SizedBox(height: 10),
                       Text(
                         'Spark your \n Learning journey',
                         style: TextStyle(
