@@ -56,7 +56,7 @@ class MyApp extends StatelessWidget {
                   child: Container(
                     width: imageWidth,
                     height: imageHeight,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       image: DecorationImage(
                         image: AssetImage('assets/images/Mask group.png'),
                         fit: BoxFit.cover,
