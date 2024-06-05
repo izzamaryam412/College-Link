@@ -27,10 +27,10 @@ class _HomePageState extends State<HomePage> {
   void initState() {
     super.initState();
     // Set a timer to navigate to LoginPage after 3 seconds
-    Timer(const Duration(seconds: 4), () {
+    Timer(const Duration(seconds: 1), () {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => LoginPage()),
+        MaterialPageRoute(builder: (context) => SignUpPage()),
       );
     });
   }
